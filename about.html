@@ -54,6 +54,36 @@
   }
 }
 
+  a,
+button,
+.cta-button,
+.nav-link {
+  transition: 
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+a:hover,
+button:hover,
+.cta-button:hover,
+.nav-link:hover {
+  color: var(--teal);
+}
+
+button:hover,
+.cta-button:hover {
+  box-shadow: 0 0 0 2px rgba(29, 158, 117, 0.22);
+}
+
+a:hover,
+.nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 /* ── DESIGN TOKENS ── */
 :root {
   --white:    #FAF8F4;      /* cream — replaces pure white as the base */
