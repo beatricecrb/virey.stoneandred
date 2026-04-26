@@ -35,7 +35,36 @@
   --border:   #E8D5D0;      /* default card/section border */
   --border2:  #D4A099;      /* rose-tinted border for focus states */
 }
+  /* CURSOR */
+a,
+button,
+.cta-button,
+.nav-link {
+  transition: 
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
 
+a:hover,
+button:hover,
+.cta-button:hover,
+.nav-link:hover {
+  color: var(--teal);
+}
+
+button:hover,
+.cta-button:hover {
+  box-shadow: 0 0 0 2px rgba(29, 158, 117, 0.22);
+}
+
+a:hover,
+.nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
 
 /* ── RESET & BASE ───────────────────────────────────────────
    Normalise browser defaults and set global body styles.
